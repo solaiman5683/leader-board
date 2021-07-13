@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    background: #F3F1FF;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -13,6 +14,20 @@ body {
     width: 80%;
     margin: auto;
 }
+
+section.container {
+    margin: 25px auto;
+}
+
+hr {
+    margin: 40px auto;
+    opacity: 0.5;
+}
+
+section {
+    background: #fff;
+}
+
 
 /* ---------------------
     Header Style Start 
@@ -32,7 +47,7 @@ ul {
 
 .navbar {
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .logo {
@@ -54,5 +69,56 @@ ul {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 20px 20px;
+}
+
+/* ---------------------- 
+    Top Player & Top Blog
+------------------------- */
+
+/* Top Players */
+.top-section {
+    padding: 30px;
+    box-shadow: 0 0 12px #0000003b;
+    border-radius: 10px;
+}
+
+.title {
+    color: #7757FF;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 15px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+/* Top Blogs */
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 15px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog img {
+    width: 224px;
+}
+
+.blog-details {
+    padding: 10px;
 }
