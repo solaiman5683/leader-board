@@ -16,7 +16,11 @@ body {
 }
 
 section.container {
+    background: #fff;
+    padding: 30px;
     margin: 25px auto;
+    box-shadow: 0 0 12px #0000003b;
+    border-radius: 10px;
 }
 
 hr {
@@ -24,8 +28,9 @@ hr {
     opacity: 0.5;
 }
 
-section {
-    background: #fff;
+
+img {
+    width: 100%;
 }
 
 
@@ -77,20 +82,16 @@ ul {
 ------------------------- */
 
 /* Top Players */
-.top-section {
-    padding: 30px;
-    box-shadow: 0 0 12px #0000003b;
-    border-radius: 10px;
-}
 
 .title {
-    color: #7757FF;
+    font-size: 2em;
+    color: #7655FF;
 }
 
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 15px;
+    grid-row-gap: 20px;
 }
 
 .player {
@@ -99,8 +100,13 @@ ul {
 }
 
 .player img {
-    width: 100px;
+    width: 150px;
     margin-right: 20px;
+}
+
+h2 {
+    color: #252525;
+    font-weight: 500;
 }
 
 /* Top Blogs */
@@ -115,10 +121,74 @@ ul {
     display: flex;
 }
 
-.blog img {
-    width: 224px;
+.blog-image {
+    width: 40%;
 }
 
+
 .blog-details {
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0 40px 20px;
+}
+
+.blog-title {
+    font-size: 2em;
+}
+
+.author {
+    color: #7757FF;
+}
+
+.author span {
+    color: rgb(124, 124, 124);
+}
+
+/* ---------------------- 
+    Letest Courses
+------------------------- */
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+
+.course {
+    margin: 0 10px;
+    padding: 15px;
+    box-shadow: 0 0 12px #0000001a;
+    border-radius: 10px;
+}
+
+.course h2 {
+    font-size: 2em;
+}
+
+.course-author {
+    color: #ED6B4F;
+    font-size: 18px;
+}
+
+.course-ratings,
+.course-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    color: #A2A2A2;
+}
+
+.course-ratings img {
+    width: 20px;
+    margin: 3px;
+}
+
+.course-duration {
+    background-color: #FFE4E8;
+    color: #FF4A60;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
 }
