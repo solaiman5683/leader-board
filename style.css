@@ -1,0 +1,58 @@
+/* ----------------
+    Common Style
+----------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* ---------------------
+    Header Style Start 
+ -----------------------*/
+
+header {
+    background-color: #562EFF;
+}
+
+.navbar,
+.left,
+.right,
+ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 56px;
+    margin-right: 10px;
+}
+
+.left {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.right ul {
+    list-style: none;
+}
+
+.right ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+}
